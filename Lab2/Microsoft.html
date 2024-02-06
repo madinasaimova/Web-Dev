@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Microsoft</title>
+    <style>
+        header {
+            background-color: #fff; /* Белый фон */
+            color: #000; /* Черный текст */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            margin-left: 64px; /* Отступ слева */
+            margin-right: 150px; /* Отступ справа */
+            margin-top: -40px;
+        }
+
+        .left-menu, .right-menu {
+            display: flex;
+            align-items: center; /* Чтобы элементы выровнялись по вертикали */
+        }
+
+        .left-menu-item, .right-menu-item {
+            margin-right: 30px;
+        }
+
+        .left-menu-item:hover, .right-menu-item:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+        .logo {
+            margin-right: 30px;
+            width: 100px; /* Ширина логотипа */
+            height: auto; /* Автоматическая высота */
+        }
+
+        .big-image img{
+            width: 98%;
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            z-index: 1; /* чтобы изображение находилось под всеми другими элементами */
+        }
+
+        .text{
+            color: #fff;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            top: 220px;
+            left: 100px;
+            z-index: 2;
+            line-height: 1.5;
+        }
+
+        .btn {
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(73, 112, 239); /* Цвет фона кнопки */
+            color: rgb(255, 255, 255); /* Цвет текста кнопки */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            border: none; /* Убираем границу кнопки */
+            font-size: 16px; /* Размер текста кнопки */
+            cursor: pointer; /* Изменяем вид курсора при наведении на кнопку */
+            margin-top: 20px; /* Отступ сверху */
+        }
+
+        #first{
+            position: absolute;
+            top: 700px;
+            left: 80px;
+            width: 250px;
+        }
+
+        .Edge {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            top: 830px;
+            left: 80px;
+        }
+        #Скачать{
+            color: rgb(61, 61, 192);
+        }
+
+
+
+        #second{
+            position: absolute;
+            top: 700px;
+            left: 380px;
+            width: 240px;
+        }
+
+        .OneDrive {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            top: 830px;
+            left: 380px;
+        }
+
+
+
+        #third{
+            position: absolute;
+            top: 700px;
+            left: 680px;
+            width: 240px;
+        }
+
+        .OneNote {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            top: 830px;
+            left: 680px;
+        }
+
+
+
+        #forth{
+            position: absolute;
+            top: 700px;
+            left: 980px;
+            width: 240px;
+        }
+
+        .Outlook {
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position:absolute;
+            top: 830px;
+            left: 980px;
+        }
+
+        #lupa{
+            position: absolute;
+            width: 40px;
+            top: 20px;
+            right: 130px;
+            cursor: pointer;
+        }
+
+        #profile{
+            position: absolute;
+            width: 40px;
+            top: 13px;
+            right: 70px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-menu">
+            <img class="logo" src="microsoftmicrosoft.webp" alt="Microsoft Logo">
+            <div class="left-menu-item">Microsoft 365</div>
+            <div class="left-menu-item">Office</div>
+            <div class="left-menu-item">Windows</div>
+            <div class="left-menu-item">Поддержка</div>
+        </div>
+        <div class="right-menu">
+            <div class="right-menu-item">Продукты Майкрософт</div>
+            <img id="lupa" src="lupa.png" alt="lupa">
+            <img id="profile" src="profile.png" alt="profile">
+        </div>
+    </header>
+    <div class="big-image"><img src="Highlight-Hero-Windows11-GlobalLaunch_VP4-1399x600.png" alt="Microsoft picture"></div>
+
+    <div class="text">
+        <h2>Разработано для жизни -<br>
+        сегодня и в будущем
+        </h2>
+        <p>
+            Следующиее поколение игр. Ваши цели. Друьзя и<br>
+            семья. C Windows 11 вы станете еще ближе к тому,<br>
+            что успели полюбить.
+        </p>
+        <button class="btn"><strong>Проверьте, готов ли ваш ПК</strong></button>
+
+    </div>
+
+
+
+    <img id="first" src="Без-названия.png" alt="Edge">
+    <div class="Edge">
+        <h2>
+            Microsoft Edge
+        </h2>
+
+        <p>
+            Потрясающая производительность,<br>
+            больше конфиденциальности,<br>
+            продуктивности и дополнительных<br>
+            возможностей.
+        </p>
+
+        <h3 id="Скачать">Скачать ></h3>
+        
+        
+        
+    </div>
+    <img id="second" src="gldn-Soft-CP-OneDriveCampaignRefresh-2.png" alt="OneDrive">
+    <div class="OneDrive">
+        <h2>
+            Microsoft OneDrive
+        </h2>
+
+        <p>
+            Сохраняйте свои файлы и<br>
+            фотографии на OneDrive - они<br>
+            будут доступны с любого устройства<br>
+            и где угодно.
+        </p>
+
+        <h3 id="Скачать">Подробнее ></h3>
+    </div>
+
+
+
+
+</div>
+<img id="third" src="Content-Card-PC-SMB-OneNote.png" alt="OneNote">
+<div class="OneNote">
+    <h2>
+        OneNote
+    </h2>
+
+    <p>
+        Приведите свои заметки и дела в<br>
+        порядок.
+    </p>
+
+    <h3 id="Скачать">Узнать больше ></h3>
+</div>
+
+
+
+</div>
+<img id="forth" src="gldn-CP-MSCOM-Outlook-iOS-Android.png" alt="Outlook">
+<div class="Outlook">
+    <h2>
+        Onelook для iOS и <br>Android
+    </h2>
+
+    <p>
+        Будьте на связи.Организовывайте.<br>
+        Успевайте больше.
+    </p>
+
+    <h3 id="Скачать">Скачать ></h3>
+</div>
+</body>
+</html>

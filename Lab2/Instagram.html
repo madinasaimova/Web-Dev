@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Instagram</title>
+  <style>
+    body {
+        font-family: 'Proxima Nova', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        margin-left: 100px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+    }
+
+    #blueButton {
+        background-color: rgb(88, 175, 237);
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        width: 100%;
+    }
+    #filling {
+            background-color: rgb(255, 255, 255);
+            padding: 40px;
+            border: 2px solid #ddd; /* Бледно-серая рамка */
+            width: 300px;
+            position: absolute;
+            bottom: 140px;
+            right: 180px;
+            font-size: 10px;
+            padding-top: 110px;
+            padding-bottom: 10px;
+        }
+        
+    #Forgotten-password {
+        color: rgb(13, 43, 105);
+        text-align: center;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .name {
+        border: 1px solid #ddd; /* Нежно-серая граница */
+        border-radius: 2px; 
+        padding: 12px; /* Добавленный отступ вокруг текстового поля */
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+    .photos {
+            position: relative;
+            width: 700px;
+            left: 80px;
+        }
+        #firstpic {
+            position: absolute;
+            top: 0;
+            left: 125px;
+            margin-top: 0;
+        }
+    #divider {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    #divider hr {
+        display: inline-block;
+        width: 118px;
+        margin: 0 10px;
+        color: rgb(181, 181, 181);
+    }
+
+    #divider span {
+        color: rgb(181, 181, 181);
+    }
+
+    a {
+      color: rgb(25, 25, 110);
+      text-decoration: none; /* Убираем подчеркивание */
+      cursor: pointer; /* Изменяем курсор при наведении */
+    }
+
+    #Facebooklogin{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+    #Facebooklogin img {
+        margin-right: 5px; /* Добавляем отступ справа для иконки */
+    }
+
+    #signup {
+        text-align: center; /* Выравнивание текста по центру */
+        margin-top: 500px; /* Отступ сверху */
+        padding: 10px; /* Поля вокруг текста */
+        border: 2px solid #ddd; /* Бледно-серая рамка */
+        width: 360px;
+        position: absolute;
+        top: -25px;
+        right: 180px;
+        font-size: 15px;
+    }
+    #signup a {
+        color: rgb(64, 166, 238); /* Цвет ссылки голубой */
+    }
+
+    #gettheapp{
+        text-align: center; /* Выравнивание текста по центру */
+        margin-top: 500px; /* Отступ сверху */
+        padding: 10px; /* Поля вокруг текста */
+        position: absolute;
+        top:40px;
+        right: 320px;
+        font-size: 15px;
+    }
+
+    #microsoft{
+        position: absolute;
+        top: 600px;
+        right: 232px;
+    }
+    #galochka{
+        position: absolute;
+        top: 620px;
+        right: 350px;
+    }
+    #googleplay{
+        position: absolute;
+        top: 590px;
+        right: 365px;
+    }
+
+    #instaname{
+        position: absolute;
+        top: 38px;
+        right: 120px;
+    }
+
+
+    #words {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start; /* Изменено на flex-start для того, чтобы слова не разбивались на новые строки */
+    color: rgb(122, 122, 122);
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: -530px; /* Отступ слева */
+    top: 700px;
+    font-size: 12px;
+    white-space: nowrap; /* Предотвращает перенос слов на новую строку */
+
+    }
+
+    #words span {
+        margin-right: 20px; /* Пробел между словами */
+    }
+
+
+
+
+    #words2 {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start; /* Изменено на flex-start для того, чтобы слова не разбивались на новые строки */
+    color: rgb(122, 122, 122);
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    left: -1130px; /* Отступ слева */
+    top: 735px;
+    font-size: 12px;
+    white-space: nowrap; /* Предотвращает перенос слов на новую строку */
+
+    }
+
+    #words2 span {
+        margin-right: 20px; /* Пробел между словами */
+    }
+
+  </style>
+</head>
+
+
+
+<body>
+    <div class="photos">
+        <img src="2.PNG" width="650">
+        <img id="firstpic" src="1.PNG" width="650">
+    </div>
+  <div class="container">
+    
+    <form id="filling">
+        
+        <img id="instaname" src="1658587465instagram-name-logo.webp" width="150">
+
+        <input type="text" class="name" name="Name" placeholder="Phone number, username or email address" required>
+
+        <input type="password" class="name" name="password" placeholder="Password" required>
+            
+        <button id="blueButton">Log in</button>
+        <div id="divider">
+            <hr></hr>
+            <span>OR</span>
+            <hr></hr>
+        </div>
+
+        <div id="Facebooklogin">
+            <img src="4.PNG" width="20px">
+            <h3  style="display: inline-block;"><a href="file:///C:/Users/madin/OneDrive/Desktop/WebDev/Lab2/Facebook.html" target-"_blank">Log in with Facebook</a></h3>
+        </div>
+        <p id="Forgotten-password">Forgotten your password?</p>
+        
+    </form>
+  </div>
+
+  <div id="signup">
+    <p>Don't have an account? <a href="#">Sign up</a></p>
+</div>
+<div id="gettheapp">
+    <p>Get the app.</p>
+</div>
+
+    <img id="googleplay" src="en_badge_web_generic.png" width="140" height="63">
+    <img id="galochka" src="free-png.ru-3.png" width="17" height="17">
+    <img id="microsoft" src="1200px-Get_it_from_Microsoft_Badge.svg.png" width="112" height="42">
+
+
+
+
+    <div id="words">
+        <span href="#">Meta</span>
+        <span href="#">About</span>
+        <span href="#">Blog</span>
+        <span href="#">Jobs</span>
+        <span href="#">Help</span>
+        <span href="#">API</span>
+        <span href="#">Privacy</span>
+        <span href="#">Terms</span>
+        <span href="#">Locations</span>
+        <span href="#">Instagram Lite</span>
+        <span href="#">Threads</span>
+        <span href="#">Contact uploading and non-users</span>
+        <span href="#">Meta Verified</span>
+    </div>
+
+
+    <div id="words2">
+        <span href="#">English(UK)ˇ</span>
+        <span>© 2024 Instagram from Meta</span>
+    </div>
+</body>
+</html>
