@@ -158,7 +158,6 @@
     display: flex;
     justify-content: flex-start; /* Изменено на flex-start для того, чтобы слова не разбивались на новые строки */
     color: rgb(122, 122, 122);
-    cursor: pointer;
     text-align: center;
     position: relative;
     left: -530px; /* Отступ слева */
@@ -170,6 +169,11 @@
 
     #words span {
         margin-right: 20px; /* Пробел между словами */
+        cursor: pointer;
+    }
+
+    #words span:hover {
+        text-decoration: underline; /* Добавляет подчеркивание при наведении */
     }
 
 
@@ -180,7 +184,6 @@
     display: flex;
     justify-content: flex-start; /* Изменено на flex-start для того, чтобы слова не разбивались на новые строки */
     color: rgb(122, 122, 122);
-    cursor: pointer;
     text-align: center;
     position: relative;
     left: -1130px; /* Отступ слева */
@@ -192,6 +195,11 @@
 
     #words2 span {
         margin-right: 20px; /* Пробел между словами */
+        cursor: pointer;
+    }
+
+    #words2 span:hover {
+        text-decoration: underline; /* Добавляет подчеркивание при наведении */
     }
 
   </style>
