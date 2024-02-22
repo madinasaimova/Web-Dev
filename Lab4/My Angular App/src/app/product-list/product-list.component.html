@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product List</title>
+  
+</head>
+<body>
+  <div *ngFor="let product of products" class="product-container">
+    <h3>
+      <a class="name" [title]="product.name + ' details'">
+        {{ product.name }}
+      </a>
+    </h3>
+
+    <img [src]="product.image" alt="{{ product.name }}" width="250">
+
+    <p class="description">
+      Rating:  {{ product.rating }}
+    </p>
+
+    <p class="description">
+      Description:  {{ product.description }}
+    </p>
+
+    <a [href]="'https://t.me/share/url?url=' + product.buyLink" 
+        target="_blank" class="share-button">Telegram link
+    </a>
+
+    <a [href]="'https://web.whatsapp.com/' + product.buyLink" 
+        target="_blank" class="share-button">Whatsapp link
+    </a>
+
+    <a [href]="product.buyLink" 
+        target="_blank" class="buy-button">See in App
+    </a>
+    <button (click)="buy(product)">Кнопка</button>
+  </div>
+
+</body>
+</html>

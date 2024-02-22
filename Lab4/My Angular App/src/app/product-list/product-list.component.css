@@ -5,25 +5,21 @@
     font-size: 30px;
 }
 .share-button, .buy-button {
-  background-color: #dcfb01;
+  background-color: #e81919;
   padding: 10px 15px;
   color: black; 
   font-weight: bold;
   text-decoration: none; 
-  margin-right: 10px; 
-  border-radius: 10px;
+  margin-right: 250px; 
   font-size: 18px;
 }
 
 .share-button:hover, .buy-button:hover {
-  background-color: #669711; 
+  background-color: #b80f0f; 
 }
 .product-container {
-    width: 45%; 
-    display: inline-block;
+    
     margin-bottom: 20px;
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
     padding: 15px; 
     box-sizing: border-box;
     vertical-align: top;
