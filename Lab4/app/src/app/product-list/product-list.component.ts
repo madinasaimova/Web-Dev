@@ -10,7 +10,12 @@ import { CommonModule } from '@angular/common';
 
 export class ProductListComponent {
   products: any[] = [
-    { name: 'LUXVISAGE Matt Ink Waterproof', description: 'Тип: подводка, текстура: жидкая, водостойкий: Да, цвет: черный, страна производства: Беларусь', rating: 4.6, image: '/assets/pic1.jpg', buyLink: "https://kaspi.kz/shop/p/luxvisage-matt-ink-waterproof-100120174?c=750000000&ref=shared_link" },
+    { name: 'LUXVISAGE Matt Ink Waterproof', 
+      description: 'Тип: подводка, текстура: жидкая, водостойкий: Да, цвет: черный, страна производства: Беларусь', 
+      rating: 4.6, 
+      image: '/assets/pic1.jpg', 
+      buyLink: "https://kaspi.kz/shop/p/luxvisage-matt-ink-waterproof-100120174?c=750000000&ref=shared_link" },
+
     { name: 'LANEIGE маска Lip Sleeping 3 мл', description: 'Восстанавливающая ночная маска для губ Laneige Special Care Lip Sleeping Mask глубоко увлажняет, питает, разглаживает нежную кожу губ, ускоряет заживление микроповреждений, придает губам соблазнительную полноту, яркость цвета и мягкость.', rating: 4.5, image: '/assets/pic2.jpg', buyLink: "https://kaspi.kz/shop/p/laneige-maska-lip-sleeping-3-ml-100697657/?c=750000000&sr=1&ref=shared_link" },
     { name: 'Патчи COSRX точечные Acne Pimple Master Patch противовоспалительные', description: 'Точечные аппликаторы Elizavecca для устранения проблем с кожей – небольшие гидро – коллоидные наклейки, применяемые в качестве средства быстрого целенаправленного удаления прыщей и покраснений на лице или теле. Для удобства пластыри круглой формы представлены разными размерами.', rating: 2.3, image: '/assets/pic3.jpg', buyLink: "https://kaspi.kz/shop/p/cosrx-tochechnye-acne-pimple-master-patch-protivovospalitel-nye-24-sht-100368434/?c=750000000&sr=1&ref=shared_link" },
     { name: 'SKIN&LAB Vitamin C Brightening сыворотка', description: 'Мощная, легкая осветляющая сыворотка с 15 комплексами витаминов, концентрированная с витамином С, помогает осветлить кожу и выровнять ее тон. Витаминные пузырьковые капсулы с антиоксидантами помогают сделать кожу здоровой, молодой и сияющей.', rating: 4.5, image: '/assets/pic4.jpg', buyLink: "https://kaspi.kz/shop/p/skin-lab-vitamin-c-brightening-syvorotka-30-ml-104829563/?c=750000000&sr=1&ref=shared_link" },
