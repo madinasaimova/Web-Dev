@@ -1,0 +1,34 @@
+<h2>Products for {{ categoryName }}</h2>
+<div *ngFor="let product of products">
+  <h3>
+    <a [title]="product.name">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <img [src]="product.image" alt="product img" />
+
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
+
+  <p>Rating: {{ product.rating }} / 5</p>
+
+  <div class="likes-container">
+    <p>Likes: {{ product.likes }}</p>
+    <button type="button" (click)="like(product)">like</button>
+  </div>
+
+  <button type="button" (click)="share(product)">Share</button>
+
+  <button
+    type="button"
+    (click)="deleteProduct(product)"
+    style="background-color: black; margin-left: 10px"
+  >
+    Delete
+  </button>
+
+  <app-product-alerts [product]="product" (notify)="onNotify()">
+  </app-product-alerts>
+</div>
+
+
